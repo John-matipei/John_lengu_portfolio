@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #0a192f;
+      color: #ccd6f6;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Left Section - Fixed Navigation and Intro */
+    .left-section {
+      width: 40%;
+      padding: 40px;
+      background-color: #112240;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      overflow-y: auto;
+      box-sizing: border-box;
+    }
+
+    .left-section h1 {
+      color: #64ffda;
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .left-section h4 {
+      font-size: 1.2em;
+      color: #ccd6f6;
+      margin-bottom: 15px;
+    }
+
+    .left-section p {
+      color: #8892b0;
+      font-size: 1em;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    .left-section ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .left-section li {
+      margin-bottom: 15px;
+    }
+
+    .left-section a {
+      color: #64ffda;
+      text-decoration: none;
+      font-size: 1em;
+      transition: color 0.3s;
+    }
+
+    .left-section a:hover {
+      color: #ffffff;
+    }
+
+    /* Right Section - Scrollable Content */
+    .right-section {
+      margin-left: 40%;
+      padding: 40px;
+      flex: 1;
+      max-width: 60%;
+      box-sizing: border-box;
+    }
+
+    .right-section section {
+      margin-bottom: 100px;
+    }
+
+    .right-section h2 {
+      color: #64ffda;
+      border-bottom: 1px solid #233554;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    /* Responsive for Mobile/Tablet */
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      .left-section {
+        position: relative;
+        width: 100%;
+        height: auto;
+        overflow: visible;
+      }
+
+      .right-section {
+        margin-left: 0;
+        max-width: 100%;
+        width: 100%;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Left Fixed Navigation and Intro -->
+  <div class="left-section">
+    <h1>John Matipei</h1>
+    <h4>Web Developer</h4>
+    <p>I build creative web experiences. Passionate about design, code, and solving real-world problems.</p>
+    <ul>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#experience">EXPERIENCE</a></li>
+      <li><a href="#projects">PROJECTS</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </div>
+
+  <!-- Right Scrollable Content -->
+  <div class="right-section">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello! My name is John Matipei and I am a passionate and creative web developer with a strong interest in designing and building user-focused websites and applications. My journey into web development began with a simple curiosity about how websites work. Over time, that curiosity grew into a deep passion for coding, problem-solving, and creating digital solutions that make life easier and more enjoyable for users.
+
+      I specialize in front-end development, with skills in HTML5, CSS3, JavaScript, and modern frameworks like React.js. I also have experience with back-end technologies like Node.js and Express, which allows me to build full-stack web applications. I enjoy creating responsive and accessible web interfaces that not only look great but also perform well across different devices and browsers.
+
+      Throughout my learning and professional journey, I have worked on a variety of projects, including personal portfolio websites, school management systems, and simple data dashboards. Each project has helped me sharpen my skills, learn new technologies, and improve my understanding of user experience and web performance optimization.
+
+      I am currently open to freelance opportunities, remote work, or full-time web development roles where I can contribute my skills, grow professionally, and help bring impactful projects to life.</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <p>Over the past year, I’ve gained practical experience in web development, working on both independent and collaborative projects. My expertise spans both front-end and back-end development, allowing me to build complete and functional web applications.</p>
+
+      <h3>Freelance Web Developer (Nov 2024 – Present)</h3>
+      <ul>
+        <li>Creating user-friendly interfaces using HTML, CSS, JavaScript, and React.js.</li>
+        <li>Building backend functionality with Node.js and Express.</li>
+        <li>Integrating APIs and third-party services.</li>
+        <li>Providing website maintenance and performance optimization.</li>
+      </ul>
+
+      <h3>School Management System Project (2024)</h3>
+      <p>Collaborated with a team to build a comprehensive school management system that managed student records, attendance, and teacher data. I contributed to both front-end development and backend setup using Node.js and Express.</p>
+
+      <h3>Personal Portfolio Website (Ongoing)</h3>
+      <p>Designed and developed my personal portfolio website to showcase my skills and projects. Recently upgraded it with React.js and Tailwind CSS for improved performance and modern design.</p>
+
+      <h3>Internship – Web Development Assistant (Mar 2024 – Jun 2024)</h3>
+      <ul>
+        <li>Assisted in updating and maintaining client websites.</li>
+        <li>Helped with bug fixing and performance testing.</li>
+        <li>Gained experience with version control tools like Git and GitHub.</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+  <h2>Projects</h2>
+  <ul>
+    <li>
+      Personal Portfolio Website
+    </li>
+    <li>
+      Todo List App (React.js)
+    </li>
+    <li>
+      School Management System (Node.js & Express)
+    </li>
+    <li>
+      <a href="https://adeafoundation.org/" target="_blank" style="color: #64ffda; text-decoration: none;">
+        Adea Foundation Website
+      </a>
+    </li>
+    <li>
+      Smart Attendance App (Under Maintenance)
+    </li>
+  </ul>
+</section>
+
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Feel free to reach out for collaborations or opportunities!</p>
+      <p>Email: 
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=matipeiii6@gmail.com" target="_blank" style="color: #64ffda; text-decoration: none;">
+          matipeiii6@gmail.com
+        </a>
+      </p>
+    </section>
+
+    <section id="credits">
+      <p style="color:#8892b0; font-size: 0.9em; margin-top: 50px;">
+        Loosely designed in 
+        <a href="https://www.figma.com/" target="_blank" style="color:#64ffda; text-decoration:none;">Figma</a> 
+        and coded in 
+        <a href="https://code.visualstudio.com/" target="_blank" style="color:#64ffda; text-decoration:none;">Visual Studio Code</a> 
+        by yours truly. Built with 
+        <a href="https://nextjs.org/" target="_blank" style="color:#64ffda; text-decoration:none;">Next.js</a> 
+        and 
+        <a href="https://tailwindcss.com/" target="_blank" style="color:#64ffda; text-decoration:none;">Tailwind CSS</a>, 
+        deployed with 
+        <a href="https://vercel.com/" target="_blank" style="color:#64ffda; text-decoration:none;">Vercel</a>. 
+        All text is set in the 
+        <a href="https://fonts.google.com/specimen/Inter" target="_blank" style="color:#64ffda; text-decoration:none;">Inter</a> 
+        typeface.
+      </p>
+    </section>
+  </div>
+
+</body>
+</html>
